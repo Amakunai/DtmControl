@@ -9,6 +9,6 @@ public class BgmSlider : DtmSlider
     {
         dtm = BgmManager.instance;
 
-        slider.value = BgmManager.volume;
+        slider.value = BgmManager.instance.volume;
     }
 }

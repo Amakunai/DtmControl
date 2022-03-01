@@ -8,7 +8,7 @@ public class BgmManager : DtmManager
 
     public static BgmManager instance;　//　シングルトンとかいうやり方らしい
 
-    public　static float volume = 0.7f;//ウドネスを考慮していないボリューム　と　初期値
+    
 
     protected override void SetUp()
     {
@@ -16,13 +16,6 @@ public class BgmManager : DtmManager
         {
             instance = this;
         }
-    }
-
-    public override void SetVolume(float vol)
-    {
-        volume = vol;
-
-        SetVolume();
     }
 
     public override void SetVolume()

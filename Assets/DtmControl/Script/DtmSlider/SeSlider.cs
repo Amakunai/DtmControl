@@ -10,7 +10,7 @@ public class SeSlider : DtmSlider,  IPointerUpHandler
     {
         dtm = SeManager.instance;
 
-        slider.value = SeManager.volume;
+        slider.value = SeManager.instance.volume;
     }
 
     public void OnPointerUp(PointerEventData data)
